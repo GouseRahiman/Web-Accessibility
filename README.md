@@ -497,27 +497,38 @@ Options:
 ```
 
 ---
-
-# 🧭 Landmark Roles (Semantic Navigation Aids)
-
-Use these **with or without ARIA** to help screen reader users navigate by page regions:
-
-| Role                   | HTML Equivalent        | Purpose                  |
-| ---------------------- | ---------------------- | ------------------------ |
-| `role="banner"`        | `<header>`             | Site-wide header         |
-| `role="navigation"`    | `<nav>`                | Primary/secondary menus  |
-| `role="main"`          | `<main>`               | Main content of the page |
-| `role="contentinfo"`   | `<footer>`             | Page or site footer      |
-| `role="search"`        | `<form role="search">` | Site-wide search         |
-| `role="complementary"` | `<aside>`              | Sidebars or related info |
+Here’s a **Summary: Quick Reference Table** for **Focus Area 3: Key Topics for Screen Reader Accessibility** based on your content:
 
 ---
 
-## ✅ Best Practices for Using ARIA
+### ✅ Screen Reader Accessibility Quick Reference Table
 
-* **Use native HTML** (e.g. `<button>`, `<input>`, `<nav>`) before falling back to ARIA.
-* **Do not misuse ARIA**—improper use can **reduce accessibility**.
-* Always **test with screen readers** (like NVDA, VoiceOver) and automated tools (like axe DevTools).
+| **Topic**                 | **Key Practice**                                         | **Example/Use Case**                                                                |
+| ------------------------- | -------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| **1. Semantic HTML**      | Use native elements before ARIA.                         | `<button>`, `<nav>`, `<header>`                                                     |
+| **2. Heading Structure**  | Use one `<h1>` per page. Nest headings logically.        | `<h2>` under `<h1>`, don’t skip levels                                              |
+| **3. Image Descriptions** | Use `alt` appropriately based on image type.             | `alt="Search icon"`, `alt=""` for decorative, use `<figcaption>` for complex images |
+| **4. Forms**              | Label all inputs. Use `aria-describedby` for extra info. | `<label for="email">`, `aria-describedby="hint"`                                    |
+| **5. Keyboard & Focus**   | Make elements keyboard-accessible. Manage focus.         | `tabindex="0"`, `.focus()`, `aria-hidden="true"`                                    |
+| **6. Live Regions**       | Use `aria-live` for dynamic updates.                     | `aria-live="polite"` for status messages, `assertive` for urgent errors             |
 
 ---
+
+### 🔑 Common ARIA Attributes
+
+| **Attribute**      | **Purpose**                                        | **Example**                                           |
+| ------------------ | -------------------------------------------------- | ----------------------------------------------------- |
+| `aria-label`       | Gives invisible label when no text exists          | `<button aria-label="Close">`                         |
+| `aria-labelledby`  | References visible text as label                   | `<div aria-labelledby="section-title">`               |
+| `aria-describedby` | Adds additional descriptive text                   | `<input aria-describedby="email-help">`               |
+| `aria-hidden`      | Hides content from screen readers                  | `<span aria-hidden="true">✓</span>`                   |
+| `role`             | Defines element’s role when native HTML isn’t used | `<div role="button">Click</div>`                      |
+| `aria-live`        | Announces updates without page reload              | `<div aria-live="polite">New message</div>`           |
+| `aria-expanded`    | Indicates expanded/collapsed state                 | `<button aria-expanded="false" aria-controls="menu">` |
+| `aria-checked`     | Indicates checkbox or toggle state                 | `<div role="checkbox" aria-checked="true">`           |
+| `aria-controls`    | Points to the element being toggled                | `<button aria-controls="accordion1">`                 |
+| `role="alert"`     | Announces important info immediately               | `<div role="alert">Error message</div>`               |
+
+---
+
 
