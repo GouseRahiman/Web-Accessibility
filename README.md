@@ -13,6 +13,8 @@
 
 ---
 
+
+
 # 👁️‍🗨️ Focus Area 1: **Key Accessibility Topics for Low Vision Users**
 
 Low vision users may:
@@ -313,6 +315,8 @@ Enable screen reader users to jump to different page areas.
 | **Keyboard Testing** | Always test without a mouse                              |
 
 ---
+
+
 
 
 # 🗣️ Focus Area 3: **Key Topics for Screen Reader Accessibility**
