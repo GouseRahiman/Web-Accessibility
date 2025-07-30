@@ -105,26 +105,8 @@ Users with **color blindness** or poor color perception may miss information tha
 
 ---
 
-## ✅ 5. **High Contrast Mode Support**
 
-### 🔹 What to Do:
-
-* Don’t override OS/browser **high contrast settings**
-* Use system colors or media queries if needed:
-
-```css
-@media (forced-colors: active) {
-  /* Adjust for high contrast mode */
-  button {
-    background: ButtonFace;
-    color: ButtonText;
-  }
-}
-```
-
----
-
-## ✅ 6. **Focus Visibility**
+## ✅ 5. **Focus Visibility**
 
 * All focusable elements **must show a visible outline** when focused by keyboard
 * Avoid removing focus styles (`outline: none`) unless you replace them with something equally visible
@@ -138,15 +120,8 @@ button:focus {
 
 ---
 
-## ✅ 7. **Responsive and Flexible Layouts**
 
-* Layout should adjust well when zoomed or text is enlarged
-* Use **flexbox** or **grid** instead of fixed pixel widths
-* Avoid absolute positioning for key content
-
----
-
-## ✅ 8. **Meaningful Link and Button Text**
+## ✅ 6. **Meaningful Link and Button Text**
 
 * Ensure link/button text is **clear**, **descriptive**, and readable when zoomed
 * Avoid vague text like “Click here” or “More”
