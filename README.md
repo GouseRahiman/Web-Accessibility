@@ -367,11 +367,6 @@ Use ARIA to let screen readers know when **content updates without a page reload
 
 ---
 
-# 🎯 **Key ARIA Attributes ("Variables") for Screen Readers**
-Here’s a list of the **most important ARIA attributes** (a.k.a. “WAI-ARIA”) that are widely used to improve **web accessibility**, especially for **screen reader users and keyboard navigation**.
-
----
-
 # 🔑 **Most Common ARIA Attributes for Accessibility**
 
 ## 📌 1. `aria-label`
