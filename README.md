@@ -260,23 +260,6 @@ Enable screen reader users to jump to different page areas.
 
 ---
 
-## 🧪 6. **Testing Keyboard Accessibility**
-
-### 🔧 Manual Test:
-
-* Use **Tab**, **Shift + Tab**, **Enter**, **Esc**, and arrow keys
-* Try navigating **without a mouse**
-* Test **focus traps** (e.g., modals, dropdowns)
-* Check **visible focus** on every focusable element
-
-### 🔧 Tools:
-
-* [axe DevTools](https://www.deque.com/axe/)
-* [Keyboard Accessibility Checker](https://wave.webaim.org/)
-* Browser DevTools > Accessibility tab
-
----
-
 # 🧠 Summary: Quick Reference Table
 
 | Concept              | What to Remember                                         |
