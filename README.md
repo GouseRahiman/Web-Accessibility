@@ -1,6 +1,6 @@
 # 🧩 Introduction to Web Accessibility
 
-**Web Accessibility** means designing websites and applications so that everyone — including people with disabilities — can perceive, understand, navigate, and interact with them.
+**Web Accessibility** means designing websites and applications so that everyone — including people with disabilities — can perceive, navigate, and interact with them.
 
 
 ## 👨‍🦯 Common Disabilities Affected by Poor Accessibility
